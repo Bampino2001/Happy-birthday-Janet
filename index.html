@@ -6,35 +6,44 @@
     <title>Happy Birthday!</title>
     <style>
         body {
-            text-align: center;
-            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #ffccff 0%, #ff99cc 100%);
             font-family: 'Arial', sans-serif;
             overflow: hidden;
         }
+        .container {
+            text-align: center;
+            color: #fff;
+        }
         h1 {
-            color: #ff69b4;
-            margin-top: 50px;
             font-size: 3em;
+            margin: 0.5em 0;
+            color: #ff4081;
         }
         h2 {
-            color: #ffa500;
             font-size: 2em;
-            margin-top: 20px;
+            margin: 0.5em 0;
+            color: #ff80ab;
         }
         .balloons {
             position: relative;
-            display: inline-block;
+            display: flex;
+            justify-content: center;
             margin-top: 50px;
-            height: 200px;
         }
         .balloon {
             position: absolute;
             bottom: 0;
             width: 50px;
             height: 70px;
-            background-color: #ff4500;
+            background-color: #ff4081;
             border-radius: 50% 50% 0 0;
-            animation: float 5s ease-in-out infinite;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: float 6s ease-in-out infinite;
         }
         .balloon:nth-child(1) { left: 10%; animation-delay: 0s; }
         .balloon:nth-child(2) { left: 30%; animation-delay: 1s; }
@@ -44,7 +53,7 @@
 
         @keyframes float {
             0% { transform: translateY(0); }
-            50% { transform: translateY(-200px); }
+            50% { transform: translateY(-300px); }
             100% { transform: translateY(0); }
         }
 
@@ -56,17 +65,19 @@
     </style>
 </head>
 <body>
-    <h1>Happy Birthday Ntuthuko yami!</h1>
-    <h2>I love you very much ❤️</h2>
-    <div class="balloons">
-        <div class="balloon" style="background-color: #ff4500;"></div>
-        <div class="balloon" style="background-color: #ffa500;"></div>
-        <div class="balloon" style="background-color: #ffff00;"></div>
-        <div class="balloon" style="background-color: #008000;"></div>
-        <div class="balloon" style="background-color: #0000ff;"></div>
-    </div>
-    <div class="emojis">
-        🎈🎉🎂🎁💖
+    <div class="container">
+        <h1>Happy Birthday Ntuthuko yami!</h1>
+        <h2>I love you very much ❤️</h2>
+        <div class="balloons">
+            <div class="balloon" style="background-color: #ff4081;"></div>
+            <div class="balloon" style="background-color: #ff80ab;"></div>
+            <div class="balloon" style="background-color: #ffc1e3;"></div>
+            <div class="balloon" style="background-color: #ff4081;"></div>
+            <div class="balloon" style="background-color: #ff80ab;"></div>
+        </div>
+        <div class="emojis">
+            🎈🎉🎂🎁💖
+        </div>
     </div>
 </body>
 </html>
