@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+        }
+        h1 {
+            color: #ff69b4;
+            margin-top: 50px;
+        }
+        h2 {
+            color: #ffa500;
+        }
+        .balloons {
+            position: relative;
+            display: inline-block;
+            margin-top: 50px;
+        }
+        .balloon {
+            position: absolute;
+            bottom: 0;
+            width: 50px;
+            height: 70px;
+            background-color: #ff4500;
+            border-radius: 50% 50% 0 0;
+            animation: float 5s ease-in-out infinite;
+        }
+        .balloon:nth-child(1) { left: 10%; animation-delay: 0s; }
+        .balloon:nth-child(2) { left: 30%; animation-delay: 1s; }
+        .balloon:nth-child(3) { left: 50%; animation-delay: 2s; }
+        .balloon:nth-child(4) { left: 70%; animation-delay: 3s; }
+        .balloon:nth-child(5) { left: 90%; animation-delay: 4s; }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-200px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday!</h1>
+    <h2>I love you very much Ntuthuko yami</h2>
+    <div class="balloons">
+        <div class="balloon" style="background-color: #ff4500;"></div>
+        <div class="balloon" style="background-color: #ffa500;"></div>
+        <div class="balloon" style="background-color: #ffff00;"></div>
+        <div class="balloon" style="background-color: #008000;"></div>
+        <div class="balloon" style="background-color: #0000ff;"></div>
+    </div>
+</body>
+</html>
